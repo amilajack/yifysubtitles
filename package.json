@@ -1,5 +1,5 @@
 {
-  "name": "yifysubtitles",
+  "name": "@amilajack/yifysubtitles",
   "version": "2.1.2",
   "description": "A simple wrapper to download subtitles from the yifysubtitles website.",
   "license": "MIT",
