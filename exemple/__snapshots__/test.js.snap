@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic basic 1`] = `
+Array [
+  Object {
+    "fileName": "Zombieland.2009.720p.BrRip.x264-YIFY.www.subsynchro.com.vtt",
+    "lang": "french",
+    "langShort": "fr",
+    "path": "/tmp/Zombieland.2009.720p.BrRip.x264-YIFY.www.subsynchro.com.vtt",
+  },
+  Object {
+    "fileName": "Zombieland.2009.720p.BrRip.x264-YIFY.vtt",
+    "lang": "english",
+    "langShort": "en",
+    "path": "/tmp/Zombieland.2009.720p.BrRip.x264-YIFY.vtt",
+  },
+  Object {
+    "fileName": "Zombieland.720p.BluRay.x264-CROSSBOW.cht.vtt",
+    "lang": "chinese",
+    "langShort": "zh",
+    "path": "/tmp/Zombieland.720p.BluRay.x264-CROSSBOW.cht.vtt",
+  },
+]
+`;

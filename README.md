@@ -1,30 +1,30 @@
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![Build Status](https://travis-ci.org/MRdotB/yifysubtitles.svg?branch=master)](https://travis-ci.org/MRdotB/yifysubtitles)
+[![Build Status](https://travis-ci.org/amilajack/yifysubtitles.svg?branch=master)](https://travis-ci.orgamilajack/yifysubtitles)
 
 # yifysubtitles
-> Download and convert subtitles in [VTT format](https://developer.mozilla.org/en/docs/Web/API/Web_Video_Text_Tracks_Format) for [YTS movies](https://yts.ag/)
 
+> Download and convert subtitles in [VTT format](https://developer.mozilla.org/en/docs/Web/API/Web_Video_Text_Tracks_Format) for [YTS movies](https://yts.ag/)
 
 ## Install
 
 ```
 $ npm i yifysubtitles --save
 ```
+
 Or using yarn
+
 ```
 $ yarn add yifysubtitles
 ```
-
 
 ## Usage
 
 ```js
 const yifysubtitles = require('yifysubtitles');
 
-yifysubtitles('tt1156398', {path: '/tmp', langs: ['en', 'fr', 'zh']})
-	.then(res => {
-		console.log(res);
-/*
+yifysubtitles('tt1156398', { path: '/tmp', langs: ['en', 'fr', 'zh'] })
+  .then(res => {
+    console.log(res);
+    /*
 =>
 res [ { lang: 'english',
     langShort: 'en',
@@ -39,10 +39,9 @@ res [ { lang: 'english',
     path: '/tmp/Zombieland.720p.BluRay.x264-CROSSBOW.cht.vtt',
     fileName: 'Zombieland.720p.BluRay.x264-CROSSBOW.cht.vtt' } ]
 */
-	})
-	.catch(err => console.log(err));
+  })
+  .catch(err => console.log(err));
 ```
-
 
 ## API
 
