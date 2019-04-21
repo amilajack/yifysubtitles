@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/amilajack/yifysubtitles.svg?branch=master)](https://travis-ci.orgamilajack/yifysubtitles)
+[![Build Status](https://dev.azure.com/amilajack/amilajack/_apis/build/status/amilajack.yifysubtitles?branchName=master)](https://dev.azure.com/amilajack/amilajack/_build/latest?definitionId=17&branchName=master)
 
 # yifysubtitles
 
@@ -7,24 +7,22 @@
 ## Install
 
 ```
-$ npm i yifysubtitles --save
+$ npm i @amilajack/yifysubtitles --save
 ```
 
 Or using yarn
 
 ```
-$ yarn add yifysubtitles
+$ yarn add @amilajack/yifysubtitles
 ```
 
 ## Usage
 
 ```js
-const yifysubtitles = require('yifysubtitles');
+const yifysubtitles = require('@amilajack/yifysubtitles');
 
-yifysubtitles('tt1156398', { path: '/tmp', langs: ['en', 'fr', 'zh'] })
-  .then(res => {
-    console.log(res);
-    /*
+await yifysubtitles('tt1156398', { path: '/tmp', langs: ['en', 'fr', 'zh'] });
+/*
 =>
 res [ { lang: 'english',
     langShort: 'en',
@@ -39,8 +37,6 @@ res [ { lang: 'english',
     path: '/tmp/Zombieland.720p.BluRay.x264-CROSSBOW.cht.vtt',
     fileName: 'Zombieland.720p.BluRay.x264-CROSSBOW.cht.vtt' } ]
 */
-  })
-  .catch(err => console.log(err));
 ```
 
 ## API

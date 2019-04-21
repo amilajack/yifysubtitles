@@ -6,9 +6,17 @@ const yifysubtitles = require('..');
 
 const downloadDir = path.join(__dirname, 'tmp');
 
-describe('basic', () => {
-  beforeAll(async () => {
+describe.skip('basic', () => {
+  beforeEach(async () => {
     await pify(fs.mkdir)(downloadDir);
+  });
+
+  afterEach(async () => {
+    await pify(fs.rmdir)(downloadDir);
+  });
+
+  afterAll(async () => {
+    await pify(fs.rmdir)(downloadDir);
   });
 
   test('with imdbid not in api', async () => {
@@ -60,9 +68,5 @@ describe('basic', () => {
       t.notThrows(pify(fs.access)(path), 'file should exist')
     );
     await pMap(paths, path => pify(fs.unlink)(path));
-  });
-
-  afterAll(async () => {
-    await pify(fs.rmdir)(downloadDir);
   });
 });

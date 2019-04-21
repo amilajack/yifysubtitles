@@ -2,8 +2,17 @@ const yifysubtitles = require('..');
 
 describe('basic', () => {
   test('basic', async () => {
-    await expect(
-      yifysubtitles('tt1156398', { langs: ['fr', 'en', 'zh'], path: '/tmp' })
-    ).resolves.toMatchSnapshot();
+    const res = await yifysubtitles('tt1156398', {
+      langs: ['fr', 'en', 'zh'],
+      path: '/tmp'
+    });
+    for (const r of res) {
+      expect(r).toEqual({
+        fileName: expect.any(String),
+        lang: expect.any(String),
+        langShort: expect.any(String),
+        path: expect.any(String)
+      });
+    }
   });
 });

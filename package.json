@@ -1,5 +1,5 @@
 {
-  "name": "yifysubtitles",
+  "name": "@amilajack/yifysubtitles",
   "version": "2.1.2",
   "description": "A simple wrapper to download subtitles from the yifysubtitles website.",
   "keywords": [
@@ -22,12 +22,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/MRdotB/yifysubtitles"
+    "url": "https://github.com/amilajack/yifysubtitles"
   },
   "license": "MIT",
   "author": {
-    "email": "baptiste.chaleil@gmail.com",
-    "name": "mrdotb"
+    "email": "amilajack@gmail.com",
+    "name": "amilajack"
   },
   "main": "index.js",
   "scripts": {
