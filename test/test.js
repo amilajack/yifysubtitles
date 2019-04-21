@@ -1,5 +1,7 @@
 const yifysubtitles = require('..');
 
+jest.setTimeout(10 ** 4);
+
 describe('basic', () => {
   test('basic', async () => {
     const res = await yifysubtitles('tt1156398', {

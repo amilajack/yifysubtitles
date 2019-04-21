@@ -4,6 +4,8 @@ const pify = require('pify');
 const pMap = require('p-map');
 const yifysubtitles = require('..');
 
+jest.setTimeout(10 ** 4);
+
 const downloadDir = path.join(__dirname, 'tmp');
 
 describe.skip('basic', () => {
